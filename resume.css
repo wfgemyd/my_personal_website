@@ -22,18 +22,121 @@ html {
     }
 }
 
+
+
+
+/*_______________________________________RESUME_______________________________________*/
+
 body {
-    margin: 0;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    line-height: 1.6;
     font-family: "Montserrat", sans-serif;
-    color: #818181;
     background-color: #1a1a1a;
 }
-
 main {
     padding: 2rem;
     margin: 0 auto;
     padding: 2rem;
     max-width: 1000px;
+}
+
+header li{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    color: #c5c5c5; /* White color for the main title */
+    font-size: 2.5rem; /* Larger size for main title */
+    text-align: left; /* Center the title */
+
+}
+
+h2 {
+    color: #adadad; /* White color for the main title */
+    font-size: 2rem; /* Larger size for main title */
+    text-align: left; /* Center the title */
+    
+}
+
+h3 {
+    color: #a0a0a0; /* Light grey for subheadings */
+    font-size: 1.5rem; /* Size for subheadings */
+    text-align: left; /* Center the title */
+}
+
+h4 {
+    color: #9b9b9b; /* Light grey for section titles */
+    font-size: 1.2rem; /* Size for section titles */
+    margin-top: 1rem; /* Spacing before section titles */
+    border-bottom: 1px solid #9c9c9c; /* Line under section titles */
+    padding-bottom: 0.5rem; /* Space between text and line */
+    text-align: left; /* Center the title */
+}
+
+ p,li {
+    color: #818181; /* Off-white for better readability */
+    margin-bottom: 0.75rem;
+    text-align: left; /* Center the title */
+}
+main p {
+    text-align: left;
+}
+a {
+    color: #ffffff; /* Blue for links */
+    text-decoration: none; /* No underline to start */
+}
+
+
+ul {
+    list-style: none; /* Remove default list styling */
+    padding-left: 0; /* Remove default padding */
+    text-align: left; /* Center the title */
+}
+
+main li::before{
+    content: '•'; /* Custom bullet point */
+    color: #ffffff; /* Blue bullet point */
+    display: inline-block; /* Needed for alignment */
+    width: 1em; /* Space before bullet point */
+    margin-left: -1em; /* Align with text outside */
+}
+
+.follow-container {
+    background: url('media/following.png') center center no-repeat;
+    background-size: 2rem; /* Adjust this as necessary to fit your design */
+    display: flex;
+    justify-content: center; /* This will center the content horizontally */
+    align-items: center; /* This will center the content vertically */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 600px) {
+    body{
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem; /* Slightly smaller title on mobile */
+    }
+
+    h3 {
+        font-size: 1.3rem; /* Slightly smaller subheadings on mobile */
+    }
+
+    h4 {
+        font-size: 1rem; /* Slightly smaller section titles on mobile */
+    }
+}
+
+
+body {
+    margin: 0;
+
+    
 }
 
 a {
@@ -44,12 +147,12 @@ a {
 p,
 h2 {
     margin: 0;
-    text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
+    text-align: left;
+    
+
 }
 
-h2 {
+footer h2 {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.8rem;
@@ -58,26 +161,21 @@ h2 {
     padding: 4rem 0 0.8rem 0;
     background-repeat: no-repeat;
     background-position: center top;
+    text-align: center;
     
 }
 
-#about-header {
-    color: #aaa;
-    background-repeat: no-repeat;
-    background-position: center top;
-}
-
-/* NAVIGATION */
+/*_______________________________________NAVIGATION_______________________________________*/
 
 #hamburger {
     width: 60px;
     height: 45px;
-    position: absolute;
+    position: fixed;
     top: 1rem;
     right: 1rem;
     cursor: pointer;
     transform: scale(0.8);
-    z-index: 5;
+    z-index: 1000;
 }
 
 #hamburger span {
@@ -86,7 +184,7 @@ h2 {
     height: 9px;
     background-color: #fff;
     border-radius: 9px;
-    position: absolute;
+    position: fixed;
     transition: transform 0.2s, top 0.2s, opacity 0.2s;
 }
 
@@ -176,13 +274,12 @@ section {
     padding-bottom: 2rem;
 }
 
-
-
 /*_______________________________________lowest part_______________________________________________*/
 footer {
-    background-color: #111;
-    padding: 2rem;
     position: relative;
+    background-color: #111;
+    padding: none;
+    
 }
 
 #social {

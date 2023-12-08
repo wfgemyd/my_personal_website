@@ -621,7 +621,7 @@ iframe {
 /*_______________________________________lowest part_______________________________________________*/
 footer {
     background-color: #111;
-    padding: 4rem;
+    padding: 2rem;
     position: relative;
 }
 
@@ -660,7 +660,7 @@ footer {
     color: #f00;
 }
 
-.twitter:hover {
+.github:hover {
     color: #55acee;
 }
 
