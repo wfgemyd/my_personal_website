@@ -187,7 +187,9 @@ h2 {
     height: 9px;
     background-color: #fff;
     border-radius: 9px;
-    position: absolute;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
     transition: transform 0.2s, top 0.2s, opacity 0.2s;
 }
 
