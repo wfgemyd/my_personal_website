@@ -92,17 +92,47 @@ const footer = document.querySelector('footer');
 const nav1 = document.getElementById('nav');
 
 
+//function handleScroll() {
+//  const footerRect = footer.getBoundingClientRect();
+//  const navHeight = nav.offsetHeight;
+  
+  // Check if the footer is coming into the viewport
+//  if (window.innerHeight - footerRect.top > 0) {
+    // Adjust the bottom position of the nav based on the footer's position
+//    nav1.style.bottom = `${window.innerHeight - footerRect.top}px`;
+//  } else {
+    // Reset the bottom position when the footer is not in view
+//    nav1.style.bottom = '0';
+//  }
+//}
+//window.addEventListener('scroll', handleScroll);
+
+let isThrottled = false;
+const throttleDuration = 100; // milliseconds
+
 function handleScroll() {
+  if (isThrottled) return;
+
+  isThrottled = true;
+  setTimeout(() => {
+    isThrottled = false;
+  }, throttleDuration);
+
   const footerRect = footer.getBoundingClientRect();
+  
+  // Use window.visualViewport.height if supported for better mobile support
+  const viewportHeight = window.visualViewport?.height || window.innerHeight;
   const navHeight = nav.offsetHeight;
   
   // Check if the footer is coming into the viewport
-  if (window.innerHeight - footerRect.top > 0) {
+  if (viewportHeight - footerRect.top > 0) {
     // Adjust the bottom position of the nav based on the footer's position
-    nav1.style.bottom = `${window.innerHeight - footerRect.top}px`;
+    nav1.style.bottom = `${viewportHeight - footerRect.top}px`;
   } else {
     // Reset the bottom position when the footer is not in view
     nav1.style.bottom = '0';
   }
 }
+
 window.addEventListener('scroll', handleScroll);
+window.addEventListener('resize', handleScroll); // Adjust for viewport changes like virtual keyboard

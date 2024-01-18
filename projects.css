@@ -113,7 +113,7 @@ h2 {
     height: 9px;
     background-color: #fff;
     border-radius: 9px;
-    position: fixed;
+    position: absolute;
     transition: transform 0.2s, top 0.2s, opacity 0.2s;
 }
 
@@ -209,8 +209,8 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
 
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .project-row {
