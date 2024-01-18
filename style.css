@@ -121,6 +121,7 @@ h1 {
     text-transform: uppercase;
     padding-top: 160px; /* Adjust this if necessary to position the text lower than the image */
     position: relative; /* Needed to position the pseudo-element */
+    flex: auto;
 }
 
 h1::before {
