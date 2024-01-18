@@ -60,6 +60,17 @@ h2 {
     background-position: center top;
     
 }
+footer h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 1.3px;
+    color: #aaa;
+    padding: 4rem 0 0.8rem 0;
+    background-image: url(media/following.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
 
 #about-header {
     color: #aaa;
