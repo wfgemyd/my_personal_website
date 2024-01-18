@@ -21,7 +21,7 @@ html {
     }
   
     #hamburger {
-        position: absolute;
+        position: center;
     }
   
     nav ul {
@@ -36,8 +36,7 @@ html {
         position: relative;
         width: fit-content;
         background-color: #111;
-        padding: 2rem;
-    
+        padding: 2rem;   
     }
     
 }
@@ -53,7 +52,7 @@ html {
     }
   
     #hamburger {
-        position: absolute;
+        position: center;
     }
   
     nav ul {
@@ -84,7 +83,7 @@ html {
     }
   
     #hamburger {
-        position: absolute;
+        position: center;
     }
   
     nav ul {
@@ -115,7 +114,7 @@ html {
     }
   
     #hamburger {
-      position: absolute;
+      position: center;
     }
   
     nav ul {
