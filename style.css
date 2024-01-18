@@ -166,19 +166,19 @@ h1 span:last-child {
 
 @media (max-width: 600px) {
     h1 {
-        transform: scale(0.5);
+        transform: scale(0.4);
     }
 }
 
 @media (max-width: 420px) {
     h1 {
-        transform: scale(0.4);
+        transform: scale(0.3);
     }
 }
 
 @media (max-width: 320px) {
     h1 {
-        transform: scale(0.3);
+        transform: scale(0.2);
     }
 }
 
