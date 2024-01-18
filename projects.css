@@ -208,7 +208,9 @@ h2 {
     transform: scale(0.8);
     z-index: 1000;
 }
-
+#hamburger.open {
+    position: fixed;
+}
 #hamburger span {
     display: block;
     width: 100%;

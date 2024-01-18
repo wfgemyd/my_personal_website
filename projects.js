@@ -136,3 +136,5 @@ function handleScroll() {
 
 window.addEventListener('scroll', handleScroll);
 window.addEventListener('resize', handleScroll); // Adjust for viewport changes like virtual keyboard
+
+

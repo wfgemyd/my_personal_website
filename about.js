@@ -6,14 +6,6 @@ hamburger.onclick = function () {
     this.classList.toggle('open');
     nav.classList.toggle('show');
 
-    // Toggle visibility of gears and GitHub projects
-    if (gears.style.visibility === 'hidden') {
-        gears.style.visibility = 'visible';
-        githubProjects.style.visibility = 'visible';
-    } else {
-        gears.style.visibility = 'hidden';
-        githubProjects.style.visibility = 'hidden';
-    }
 };
 
 
@@ -35,3 +27,17 @@ function handleScroll() {
   }
 }
 window.addEventListener('scroll', handleScroll);
+
+function calculateAge(birthDateString) {
+  var birthDate = new Date(birthDateString);
+  var today = new Date();
+  var age = today.getFullYear() - birthDate.getFullYear();
+  var m = today.getMonth() - birthDate.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+  }
+  return age;
+}
+
+document.getElementById('age').textContent = calculateAge('1997-05-20');
+

@@ -35,3 +35,17 @@ function handleScroll() {
   }
 }
 window.addEventListener('scroll', handleScroll);
+
+function calculateAge(birthDateString) {
+  var birthDate = new Date(birthDateString);
+  var today = new Date();
+  var age = today.getFullYear() - birthDate.getFullYear();
+  var m = today.getMonth() - birthDate.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+  }
+  return age;
+}
+
+document.getElementById('age').textContent = calculateAge('1997-05-20');
+
