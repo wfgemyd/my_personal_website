@@ -121,7 +121,8 @@ h1 {
     text-transform: uppercase;
     padding-top: 160px; /* Adjust this if necessary to position the text lower than the image */
     position: relative; /* Needed to position the pseudo-element */
-    flex: auto;
+    width: auto;
+    height: auto;
 }
 
 h1::before {
@@ -165,19 +166,19 @@ h1 span:last-child {
 
 @media (max-width: 600px) {
     h1 {
-        transform: scale(0.6);
+        transform: scale(0.5);
     }
 }
 
 @media (max-width: 420px) {
     h1 {
-        transform: scale(0.5);
+        transform: scale(0.4);
     }
 }
 
 @media (max-width: 320px) {
     h1 {
-        transform: scale(0.4);
+        transform: scale(0.3);
     }
 }
 

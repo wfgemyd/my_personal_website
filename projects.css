@@ -10,15 +10,27 @@ html {
     scroll-behavior: smooth;
 }
 
+@media (max-width: 1400px) {
+    h1 {
+        transform: scale(0.8);
+    }
+}
+
 @media (max-width: 600px) {
-    html {
-        font-size: 14px;
+    h1 {
+        transform: scale(0.5);
     }
 }
 
 @media (max-width: 420px) {
-    html {
-        font-size: 12px;
+    h1 {
+        transform: scale(0.4);
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
+        transform: scale(0.3);
     }
 }
 
