@@ -152,7 +152,7 @@ h2 {
     
 
 }
-
+/* 
 footer h2 {
     text-transform: uppercase;
     font-weight: 600;
@@ -163,6 +163,25 @@ footer h2 {
     background-repeat: no-repeat;
     background-position: center top;
     text-align: center;
+    
+} */
+
+footer h2 {
+    margin: 0;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+footer h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.8rem;
+    letter-spacing: 1.3px;
+    color: #aaa;
+    padding: 4rem 0 0.8rem 0;
+    background-repeat: no-repeat;
+    background-position: center top;
     
 }
 
@@ -277,10 +296,9 @@ section {
 
 /*_______________________________________lowest part_______________________________________________*/
 footer {
-    position: relative;
     background-color: #111;
-    padding-top: 2rem;
-    
+    padding: 2rem;
+    position: relative;
 }
 
 #social {
