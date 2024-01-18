@@ -21,8 +21,7 @@ html {
     }
   
     #hamburger {
-      right: auto; /* Adjust the right position to keep it within the viewport */
-      position: center;
+        position: absolute;
     }
   
     nav ul {
@@ -33,6 +32,14 @@ html {
     h1, h2, h3, p {
       font-size: smaller; /* Adjust font size as needed */
     }
+    footer{
+        position: relative;
+        width: fit-content;
+        background-color: #111;
+        padding: 2rem;
+    
+    }
+    
 }
 
 @media (max-width: 600px) {
@@ -46,8 +53,7 @@ html {
     }
   
     #hamburger {
-      right: auto; /* Adjust the right position to keep it within the viewport */
-      position: center;
+        position: absolute;
     }
   
     nav ul {
@@ -57,6 +63,13 @@ html {
     /* Adjust font sizes for smaller screens */
     h1, h2, h3, p {
       font-size: smaller; /* Adjust font size as needed */
+    }
+    footer{
+        position: relative;
+        width: fit-content;
+        background-color: #111;
+        padding: 2rem;
+    
     }
 }
 
@@ -71,8 +84,7 @@ html {
     }
   
     #hamburger {
-      right: auto; /* Adjust the right position to keep it within the viewport */
-      position: center;
+        position: absolute;
     }
   
     nav ul {
@@ -82,6 +94,13 @@ html {
     /* Adjust font sizes for smaller screens */
     h1, h2, h3, p {
       font-size: smaller; /* Adjust font size as needed */
+    }
+    footer{
+        position: relative;
+        width: fit-content;
+        background-color: #111;
+        padding: 2rem;
+    
     }
 }
 
@@ -96,8 +115,7 @@ html {
     }
   
     #hamburger {
-      right: auto; /* Adjust the right position to keep it within the viewport */
-      position: center;
+      position: absolute;
     }
   
     nav ul {
@@ -107,6 +125,13 @@ html {
     /* Adjust font sizes for smaller screens */
     h1, h2, h3, p {
       font-size: smaller; /* Adjust font size as needed */
+    }
+    footer{
+        position: relative;
+        width: fit-content;
+        background-color: #111;
+        padding: 2rem;
+    
     }
 }
 
