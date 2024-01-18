@@ -22,6 +22,7 @@ html {
   
     #hamburger {
       right: auto; /* Adjust the right position to keep it within the viewport */
+      position: center;
     }
   
     nav ul {
@@ -46,6 +47,7 @@ html {
   
     #hamburger {
       right: auto; /* Adjust the right position to keep it within the viewport */
+      position: center;
     }
   
     nav ul {
@@ -70,6 +72,7 @@ html {
   
     #hamburger {
       right: auto; /* Adjust the right position to keep it within the viewport */
+      position: center;
     }
   
     nav ul {
@@ -94,6 +97,7 @@ html {
   
     #hamburger {
       right: auto; /* Adjust the right position to keep it within the viewport */
+      position: center;
     }
   
     nav ul {
