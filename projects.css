@@ -13,15 +13,15 @@ html {
 @media (max-width: 1400px) {
     .github-projects-container,
     .project {
-      width: 100%; /* Make sure the width is responsive */
+      width: auto; /* Make sure the width is responsive */
       margin-left: auto; /* Center align the project divs */
       margin-right: auto; /* Center align the project divs */
-      padding: 10px; /* Adjust padding if necessary */
+      padding: 0; /* Adjust padding if necessary */
       box-sizing: border-box; /* Include padding in width calculations */
     }
   
     #hamburger {
-      right: 10px; /* Adjust the right position to keep it within the viewport */
+      right: auto; /* Adjust the right position to keep it within the viewport */
     }
   
     nav ul {
@@ -37,15 +37,15 @@ html {
 @media (max-width: 600px) {
     .github-projects-container,
     .project {
-      width: 100%; /* Make sure the width is responsive */
+      width: auto; /* Make sure the width is responsive */
       margin-left: auto; /* Center align the project divs */
       margin-right: auto; /* Center align the project divs */
-      padding: 10px; /* Adjust padding if necessary */
+      padding: 0; /* Adjust padding if necessary */
       box-sizing: border-box; /* Include padding in width calculations */
     }
   
     #hamburger {
-      right: 10px; /* Adjust the right position to keep it within the viewport */
+      right: auto; /* Adjust the right position to keep it within the viewport */
     }
   
     nav ul {
@@ -61,15 +61,15 @@ html {
 @media (max-width: 420px) {
     .github-projects-container,
     .project {
-      width: 100%; /* Make sure the width is responsive */
+      width: auto; /* Make sure the width is responsive */
       margin-left: auto; /* Center align the project divs */
       margin-right: auto; /* Center align the project divs */
-      padding: 10px; /* Adjust padding if necessary */
+      padding: 0; /* Adjust padding if necessary */
       box-sizing: border-box; /* Include padding in width calculations */
     }
   
     #hamburger {
-      right: 10px; /* Adjust the right position to keep it within the viewport */
+      right: auto; /* Adjust the right position to keep it within the viewport */
     }
   
     nav ul {
@@ -85,15 +85,15 @@ html {
 @media (max-width: 320px) {
     .github-projects-container,
     .project {
-      width: 100%; /* Make sure the width is responsive */
+      width: auto; /* Make sure the width is responsive */
       margin-left: auto; /* Center align the project divs */
       margin-right: auto; /* Center align the project divs */
-      padding: 10px; /* Adjust padding if necessary */
+      padding: 0; /* Adjust padding if necessary */
       box-sizing: border-box; /* Include padding in width calculations */
     }
   
     #hamburger {
-      right: 10px; /* Adjust the right position to keep it within the viewport */
+      right: auto; /* Adjust the right position to keep it within the viewport */
     }
   
     nav ul {
@@ -239,7 +239,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow-x: hidden; /* Disable horizontal scroll, remove -x if needed */
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.5s, opacity 0.8s;
