@@ -105,8 +105,9 @@ main li::before{
 }
 
 .follow-container {
-    background: url('media/following.png') center center no-repeat;
+    background: url('media/following.png') center top no-repeat;
     background-size: 2rem; /* Adjust this as necessary to fit your design */
+
     display: flex;
     justify-content: center; /* This will center the content horizontally */
     align-items: center; /* This will center the content vertically */
@@ -278,7 +279,7 @@ section {
 footer {
     position: relative;
     background-color: #111;
-    padding: none;
+    padding-top: 2rem;
     
 }
 
