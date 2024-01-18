@@ -10,7 +10,7 @@ html {
     scroll-behavior: smooth;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
     .github-projects-container,
     .project {
       width: 100%; /* Make sure the width is responsive */
@@ -32,8 +32,81 @@ html {
     h1, h2, h3, p {
       font-size: smaller; /* Adjust font size as needed */
     }
-  }
+}
+
+@media (max-width: 600px) {
+    .github-projects-container,
+    .project {
+      width: 100%; /* Make sure the width is responsive */
+      margin-left: auto; /* Center align the project divs */
+      margin-right: auto; /* Center align the project divs */
+      padding: 10px; /* Adjust padding if necessary */
+      box-sizing: border-box; /* Include padding in width calculations */
+    }
   
+    #hamburger {
+      right: 10px; /* Adjust the right position to keep it within the viewport */
+    }
+  
+    nav ul {
+      padding: 2rem 0; /* Reduce padding on mobile */
+    }
+  
+    /* Adjust font sizes for smaller screens */
+    h1, h2, h3, p {
+      font-size: smaller; /* Adjust font size as needed */
+    }
+}
+
+@media (max-width: 420px) {
+    .github-projects-container,
+    .project {
+      width: 100%; /* Make sure the width is responsive */
+      margin-left: auto; /* Center align the project divs */
+      margin-right: auto; /* Center align the project divs */
+      padding: 10px; /* Adjust padding if necessary */
+      box-sizing: border-box; /* Include padding in width calculations */
+    }
+  
+    #hamburger {
+      right: 10px; /* Adjust the right position to keep it within the viewport */
+    }
+  
+    nav ul {
+      padding: 2rem 0; /* Reduce padding on mobile */
+    }
+  
+    /* Adjust font sizes for smaller screens */
+    h1, h2, h3, p {
+      font-size: smaller; /* Adjust font size as needed */
+    }
+}
+
+@media (max-width: 320px) {
+    .github-projects-container,
+    .project {
+      width: 100%; /* Make sure the width is responsive */
+      margin-left: auto; /* Center align the project divs */
+      margin-right: auto; /* Center align the project divs */
+      padding: 10px; /* Adjust padding if necessary */
+      box-sizing: border-box; /* Include padding in width calculations */
+    }
+  
+    #hamburger {
+      right: 10px; /* Adjust the right position to keep it within the viewport */
+    }
+  
+    nav ul {
+      padding: 2rem 0; /* Reduce padding on mobile */
+    }
+  
+    /* Adjust font sizes for smaller screens */
+    h1, h2, h3, p {
+      font-size: smaller; /* Adjust font size as needed */
+    }
+}
+
+
 
 body {
     margin: 0;
@@ -152,11 +225,14 @@ h2 {
     opacity: 0;
 }
 
+
 nav {
     position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background-color: rgba(0, 0, 0, 1);
-    width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
