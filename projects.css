@@ -322,16 +322,16 @@ nav a:hover {
 }
 .gear-big {
   width: 80px;
-  animation: 3s linear infinite normal both spin;
-  margin-bottom: 15px;
-  margin-left: -3.5px;
+  animation: 9s linear infinite normal both spin;
+  margin-bottom: 1px;
+  margin-left: 100px;
 }
 
 .gear-small {
   width: 500px;
-  margin-bottom: 15px;
+  margin-bottom: 300px;
   margin-left: -3.5px;
-  animation: 6s linear infinite reverse both spin;
+  animation: 10s linear infinite reverse both spin;
 }
 
 @keyframes spin {
@@ -350,16 +350,6 @@ nav a:hover {
         
     }
     .gear-big {
-      width: 20vw; /* Increase size for smaller screens if needed */
-    }
-    .gear-small {
-      width: 40vw; /* Increase size for smaller screens if needed */
-    }
-  }
-  
-  @media (max-width: 480px) {
-
-    .gear-big {
         width: 80px;
         margin-bottom: 15px;
         margin-left: -3.5px;
@@ -367,6 +357,20 @@ nav a:hover {
     .gear-small {
         width: 900px;
         margin-bottom: 15px;
+        margin-left: -3.5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+
+    .gear-big {
+        width: 80px;
+
+        margin-top: 150px;
+        margin-left: -3.5px;
+    }
+    .gear-small {
+        width: 900px;
         margin-left: -3.5px;
     }
   }
