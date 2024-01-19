@@ -10,7 +10,18 @@ html {
     scroll-behavior: smooth;
 }
 
+@media (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+    
+}
 
+@media (max-width: 420px) {
+    html {
+        font-size: 12px;
+    }
+}
 body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
@@ -19,7 +30,9 @@ body {
     position: relative;
     
 }
-
+main {
+    overflow: hidden;
+}
 a {
     color: inherit;
     text-decoration: none;
@@ -95,9 +108,11 @@ footer h2 {
     cursor: pointer;
     transform: scale(0.8);
     z-index: 1000;
+
 }
 #hamburger.open {
     position: fixed;
+    
 }
 #hamburger span {
     display: block;
@@ -161,6 +176,7 @@ nav {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.5s, opacity 0.8s;
+    
 }
 
 nav.show {
@@ -267,12 +283,12 @@ nav a:hover {
 /*_______________________________________gears_______________________________________________*/
 
 .gears {
-    width: auto;
-    margin: 0 auto;
+
     transform: rotate(-15deg);
     width: center; /* play with it later */
     height: 1rem;
     z-index: 1;
+    position: relative;
 }
 
 .gears, .github-projects-container {
@@ -327,6 +343,34 @@ nav a:hover {
         transform: rotate(360deg);
     }
 }
+@media (max-width: 768px) {
+    .gears
+    {
+        scale: 0.8;
+        
+    }
+    .gear-big {
+      width: 20vw; /* Increase size for smaller screens if needed */
+    }
+    .gear-small {
+      width: 40vw; /* Increase size for smaller screens if needed */
+    }
+  }
+  
+  @media (max-width: 480px) {
+
+    .gear-big {
+        width: 80px;
+        margin-bottom: 15px;
+        margin-left: -3.5px;
+    }
+    .gear-small {
+        width: 900px;
+        margin-bottom: 15px;
+        margin-left: -3.5px;
+    }
+  }
+  
 
 /*_______________________________________lowest part_______________________________________________*/
 footer {

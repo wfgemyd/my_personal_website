@@ -2,6 +2,8 @@ const hamburger = document.getElementById('hamburger');
 const nav = document.getElementById('nav');
 const gears = document.querySelector('.gears');
 const githubProjects = document.querySelector('.github-projects-container');
+const footer = document.querySelector('footer');
+const nav1 = document.getElementById('nav');
 
 
 hamburger.onclick = function () {
@@ -88,8 +90,6 @@ function fetchLastCommit(commitsUrl) {
 
 
 
-const footer = document.querySelector('footer');
-const nav1 = document.getElementById('nav');
 
 
 //function handleScroll() {
@@ -136,5 +136,7 @@ function handleScroll() {
 
 window.addEventListener('scroll', handleScroll);
 window.addEventListener('resize', handleScroll); // Adjust for viewport changes like virtual keyboard
+
+
 
 
