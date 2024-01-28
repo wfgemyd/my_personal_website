@@ -224,19 +224,19 @@ footer {
 }
 
 .facebook:hover {
-    color: #3b5998;
+    color: #0051ff;
 }
 
 .instagram:hover {
     color: #f4a818;
 }
 
-.youtube:hover {
-    color: #f00;
+.linkedin:hover {
+    color: #4b81f5;
 }
 
 .github:hover {
-    color: #55acee;
+    color: #000000;
 }
 
 footer p {
